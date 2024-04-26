@@ -12,7 +12,7 @@ from generators.configs.openhab_commonconfig import *
 
 com = {
     'author': 'Olaf Lüke <olaf@tinkerforge.com>',
-    'api_version': [2, 0, 2],
+    'api_version': [2, 0, 3],
     'category': 'Bricklet',
     'device_identifier': 2159,
     'name': 'EVSE',
@@ -592,6 +592,38 @@ com['packets'].append({
 'en':
 """
 TODO
+""",
+'de':
+"""
+TODO
+"""
+}]
+})
+
+com['packets'].append({
+'type': 'function',
+'name': 'Set Boost Current',
+'elements': [('Boost Current', 'uint16', 1, 'in')],
+'since_firmware': [2, 2, 0],
+'doc': ['bf', {
+'en':
+"""
+""",
+'de':
+"""
+TODO
+"""
+}]
+})
+
+com['packets'].append({
+'type': 'function',
+'name': 'Get Boost Current',
+'elements': [('Boost Current', 'uint16', 1, 'out')],
+'since_firmware': [2, 2, 0],
+'doc': ['bf', {
+'en':
+"""
 """,
 'de':
 """
